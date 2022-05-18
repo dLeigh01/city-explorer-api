@@ -15,7 +15,7 @@ app.use(cors());
 const PORT = process.env.PORT || 3002;
 
 // ROUTES
-app.get('/weather', (req, res) => {
+app.get('/weather', (req, res, next) => {
   try {
     let city = req.query.searchQuery;
     // let lat = req.query.lat;
