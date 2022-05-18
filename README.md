@@ -22,6 +22,7 @@ Created using Node and JavaScript
 ## Credit and Collaborations
 
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-07/in-class-demo/pets-api-301d85)
+![WRRC Lab 07](./wrrc-lab07.jpg) Made with [Denis Rendon](https://github.com/DenisRendon) and [Cheri Hodge](https://github.com/cheriezus)
 
 ## Time Estimates
 
