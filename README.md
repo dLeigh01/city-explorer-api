@@ -27,20 +27,10 @@ Created using Node and JavaScript
 
 Name of feature: **# 1 Weather**
 
-Estimate of time needed to complete:
+Estimate of time needed to complete: 1 hour
 
-Start time:
+Start time: 5:09
 
-Finish time:
+Finish time: 6:47
 
-Actual time needed to complete:
-
-Name of feature: **#2 Movies**
-
-Estimate of time needed to complete:
-
-Start time:
-
-Finish time:
-
-Actual time needed to complete:
+Actual time needed to complete: 1 hour(approx. I took a dinner break)
