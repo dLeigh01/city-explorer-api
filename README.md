@@ -1,7 +1,7 @@
 # City Explorer API
 
 **Author**: Dana Huffman
-**Version**: 1.0.0
+**Version**: 1.0.2
 
 ## Overview
 
@@ -17,7 +17,7 @@ Created using Node and JavaScript
 
 ## Change Log
 
-05-17-2022
+05-17-2022 6:49pm - Got Weather API running
 
 ## Credit and Collaborations
 
@@ -25,7 +25,7 @@ Created using Node and JavaScript
 
 ## Time Estimates
 
-Name of feature: **# 1 Weather**
+Name of feature: **#1 Weather**
 
 Estimate of time needed to complete: 1 hour
 
@@ -34,3 +34,13 @@ Start time: 5:09
 Finish time: 6:47
 
 Actual time needed to complete: 1 hour(approx. I took a dinner break)
+
+Name of feature: **#2 Errors**
+
+Estimate of time needed to complete: 10 minutes
+
+Start time: 7:23
+
+Finish time:
+
+Actual time needed to complete:

@@ -16,18 +16,22 @@ const PORT = process.env.PORT || 3002;
 
 // ROUTES
 app.get('/weather', (req, res) => {
-  let city = req.query.searchQuery;
-  // let lat = req.query.lat;
-  // let lon = req.query.lon;
-
-  // TEST DURING SPECIFIC DATA FOR LAB 7
-  if (city !== 'Seattle' && city !== 'Paris' && city !== 'Amman') {
+  try {
+    let city = req.query.searchQuery;
+    // let lat = req.query.lat;
+    // let lon = req.query.lon;
+  
+    // TEST DURING SPECIFIC DATA FOR LAB 7 ----------------------------------------
+    if (city !== 'Seattle' && city !== 'Paris' && city !== 'Amman') {
+      next(error);
+    } else {
+      let selectedCity = weather.find(name => name.city_name === city);
+      let dataToSend = [];
+      selectedCity.data.forEach(day => dataToSend.push(new Forecast(day)));
+      res.send(dataToSend);
+    }
+  } catch (error) {
     next(error);
-  } else {
-    let selectedCity = weather.find(name => name.city_name === city);
-    let dataToSend = [];
-    selectedCity.data.forEach(day => dataToSend.push(new Forecast(day)));
-    res.send(dataToSend);
   }
 });
 
