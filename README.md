@@ -1,7 +1,7 @@
 # City Explorer API
 
 **Author**: Dana Huffman
-**Version**: 1.1.0
+**Version**: 1.1.1
 
 ## Overview
 
@@ -20,12 +20,13 @@ Created using Node and JavaScript
 05-17-2022 6:49pm - Got Weather API running
 05-17-2022 7:30pm - Added error handling
 05-18-2022 4:46pm - Updated /weather to pull from API
+05-18-2022 5:50pm - Added API call and object for movies
 
 ## Credit and Collaborations
 
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-07/in-class-demo/pets-api-301d85)
 ![WRRC Lab 07](./wrrc-lab07.jpg) Made with [Denis Rendon](https://github.com/DenisRendon) and [Cheri Hodge](https://github.com/cheriezus)
-![WRRC Lab 07](./wrrc-lab08.jpg) Made with [Elizabeth Hammes](https://github.com)
+![WRRC Lab 08](./wrrc-lab08.jpg) Made with [Elizabeth Hammes](https://github.com)
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-08/in-class-demo/image-finder-back-end-301d85)
 
 ## Time Estimates
@@ -59,3 +60,13 @@ Start time: 4:25
 Finish time: 4:45
 
 Actual time needed to complete: 20 min
+
+Name of feature: **#4 Movies**
+
+Estimate of time needed to complete: 45 min
+
+Start time: 5:00
+
+Finish time: 5:49
+
+Actual time needed to complete: 49 min

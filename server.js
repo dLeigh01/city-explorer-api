@@ -34,6 +34,20 @@ app.get('/weather', async (req, res, next) => {
   }
 });
 
+// ----- movies -----
+app.get('/movies', async (req, res, next) => {
+  try {
+    let city = req.query.searchQuery;
+    let movies = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIEDB_KEY}&language=en-US&query=${city}&include_adult=false`);
+    let dataToSend = [];
+
+    movies.data.results.forEach(movie => dataToSend.push(new Movie(movie)));
+    res.send(dataToSend);
+  } catch (error) {
+    next(error);
+  }
+})
+
 // ----- catch all -----
 app.get('/*', (req, res) => res.send('This is not the page you\'re looking for.'));
 
@@ -49,6 +63,18 @@ class Forecast {
     this.description = forecastObj.weather.description;
     this.low = forecastObj.low_temp;
     this.high = forecastObj.max_temp;
+  }
+}
+
+class Movie {
+  constructor(movieObj) {
+    this.title = movieObj.original_title;
+    this.overview = movieObj.overview;
+    this.average_votes = movieObj.vote_average;
+    this.total_votes = movieObj.vote_count;
+    this.image_url = movieObj.poster_path;
+    this.popularity = movieObj.popularity;
+    this.released_on = movieObj.release_date;
   }
 }
 
