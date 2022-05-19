@@ -1,7 +1,7 @@
 # City Explorer API
 
 **Author**: Dana Huffman
-**Version**: 1.1.1
+**Version**: 1.2.0
 
 ## Overview
 
@@ -21,13 +21,21 @@ Created using Node and JavaScript
 05-17-2022 7:30pm - Added error handling
 05-18-2022 4:46pm - Updated /weather to pull from API
 05-18-2022 5:50pm - Added API call and object for movies
+05-19-2022 4:30pm - Completed modularization
 
 ## Credit and Collaborations
 
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-07/in-class-demo/pets-api-301d85)
+
 ![WRRC Lab 07](./wrrc-lab07.jpg) Made with [Denis Rendon](https://github.com/DenisRendon) and [Cheri Hodge](https://github.com/cheriezus)
+
 ![WRRC Lab 08](./wrrc-lab08.jpg) Made with [Elizabeth Hammes](https://github.com/ehammes)
+
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-08/in-class-demo/image-finder-back-end-301d85)
+
+![WRRC Lab 09](./wrrc-lab09.jpg) Made with [Vinny Shipley](https://github.com/VinnyShipley)
+
+[in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-09/in-class-demo/image-finder-back-end-301d85)
 
 ## Time Estimates
 
@@ -70,3 +78,13 @@ Start time: 5:00
 Finish time: 5:49
 
 Actual time needed to complete: 49 min
+
+Name of feature: **#5 Modularization**
+
+Estimate of time needed to complete: 45 min
+
+Start time: 3:35
+
+Finish time: 4:27
+
+Actual time needed to complete: 52 min
