@@ -26,7 +26,7 @@ Created using Node and JavaScript
 
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-07/in-class-demo/pets-api-301d85)
 ![WRRC Lab 07](./wrrc-lab07.jpg) Made with [Denis Rendon](https://github.com/DenisRendon) and [Cheri Hodge](https://github.com/cheriezus)
-![WRRC Lab 08](./wrrc-lab08.jpg) Made with [Elizabeth Hammes](https://github.com)
+![WRRC Lab 08](./wrrc-lab08.jpg) Made with [Elizabeth Hammes](https://github.com/ehammes)
 [in class demo](https://github.com/codefellows/seattle-code-301d85/tree/main/class-08/in-class-demo/image-finder-back-end-301d85)
 
 ## Time Estimates
