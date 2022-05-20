@@ -8,10 +8,8 @@ function getWeather(lat, lon) {
   const key = 'weather-' + lat + lon;
   const url = `http://api.weatherbit.io/v2.0/forecast/daily/?key=${process.env.WEATHERBIT_KEY}&lang=en&lat=${lat}&lon=${lon}&days=5`;
   
-  if (cache[key] && ((Date.now() - cache[key].timestamp) < 50000)) {
-    console.log('Cache hit');
+  if (cache[key] && ((Date.now() - cache[key].timestamp) < (1000 * 60 * 60 * 24 * 30))) {
   } else {
-    console.log('Cache miss');
     cache[key] = {};
     cache[key].timestamp = Date.now();
     cache[key].data = axios.get(url)
