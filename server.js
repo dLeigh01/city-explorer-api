@@ -1,37 +1,35 @@
 'use strict';
 
 // REQUIRE
+require('dotenv');
 const express = require('express');
 const cors = require('cors');
-const axios = require('axios');
-const getWeather = require('./modules/weather');
+const getWeather = require('./modules/weather.js');
 const getMovies = require('./modules/movies');
 
 require('dotenv').config();
 
-// USE
 const app = express();
-
 app.use(cors());
 const PORT = process.env.PORT || 3002;
 
-// ROUTES
-// ----- home -----
+//ROUTES
 app.get('/', (req,res) => res.send('Ready to receive.'));
 
-// ----- weather ------
-app.get('/weather', getWeather);
+app.get('/weather', weatherHandler);
 
-// ----- movies -----
 app.get('/movies', getMovies);
 
-// ----- catch all -----
 app.get('/*', (req, res) => res.send('This is not the page you\'re looking for.'));
 
-// ERRORS
-app.use((error, req, res, next) => {
-  res.status(500).send(error.message);
-});
+function weatherHandler(request, response) {
+  const { lat, lon } = request.query;
+  getWeather(lat, lon)
+  .then(summaries => response.send(summaries))
+  .catch((error) => {
+    console.error(error);
+    response.status(500).send('Sorry. Something went wrong!')
+  });
+}  
 
-// LISTEN
-app.listen(PORT, () => console.log(`listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server up on ${PORT}`));
